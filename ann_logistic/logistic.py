@@ -16,6 +16,7 @@ X = np.random.rand(N, D)
  Probably, add a column of ones to the OG data
  include bias term in weights W
 '''
+
 ones = np.array([[1]*N]).T # need 2D but array in numpy is 1D
 
 # Concatenate vector of ones to OG data set
@@ -31,3 +32,4 @@ def sigmoid(z):
     return 1/(1 + np.exp(-z))
 
 print sigmoid(z)
+
